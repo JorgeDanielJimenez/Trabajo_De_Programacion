@@ -14,6 +14,10 @@ def house():
 def articles():
     return render_template('articles.html')
 
+@app.route("/pcb")
+def pcb():
+    return render_template('pcb.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
